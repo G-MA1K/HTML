@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CAJERO ELECTRONICO</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<Style>
+    h1,h2,h3{
+        font-size: 26px;
+        color: blueviolet;
+        text-align: center;
+
+    }
+</style>
+</head>
+<body>
+    <center>
+        <img src="./img/nu.jpeg" alt="" width="150" height="150">
+        <h1>BANCO NUBANK</h1>
+        <H2>RETIRO DINERO CAJERO ELECTRONICO</H2>
+        <h3>BIENBENIDO-A- SR. USUARIO-A-</h3>
+        <br><br>
+        <script>
+            let sw=0; //variable bandera controla acceso al dinero apagada
+            //entrada
+            let cuenta=parseInt(prompt("INGRESE NUMERO DE CUENTA DE AHORROS"));
+            let saldo=parseInt(prompt("INGRESE SALDO A CONSIGNAR"));
+            let valor=parseInt(promp("INGRESE VALOR DINERO $$A RETIRAR"));
+            //CONDICIONAL
+            if(valor>saldo){
+                swal("Estimado usuario","**** FONDOS INSUFICIENTES ****","error");
+            }else{
+                sw=1; //activado
+                var saldof;
+                saldof=saldo-valor; //actualiza saldo cuenta
+                swal("Estimado usuario","RETIRE SUS LUKAS !!","success");
+            
+            }
+//condicional
+if (sw==0){
+    document.write("RECUERDE SU SALDO DISPONIBLE ES ....$"+saldo);
+
+}else{
+    document.write(" NO OLVIDE RETIRAR SU TARJETA, SU SALDO ACTUAL ES ....$"+saldof)
+
+}
+        </script>
+    </center>
+
+
+
+
+
+
+</body>
+</html>

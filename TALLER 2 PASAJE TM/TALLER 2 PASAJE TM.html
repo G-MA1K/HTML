@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASAJE TM</title>
+<!-- link de sitio sweetalert mensajes más elegantes-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+   <center>
+    <img src="./img/transmilenio.jpeg" alt="">
+    <h1>VALIDAR INGRESO A SISTEMA TRANSMILENIO</h1>
+<h2>VALOR PASAJE $2.950</h2>
+<br><br>
+<script>
+const TM=2950;// valor pasaje
+//entrada
+let saldo=parseInt(prompt("INGRESE RECARGA TARJETA TU LLAVE"));
+//CONDICIONAL
+if(saldo>=TM){
+    swal("ESTIMADO USUARIO","INGRESE A TRANSMILENIO","success");
+    document.write("BIENVENIDO A TRANSMILENIO");
+}else{
+    swal("ESTIMADO USUARIO","SALDO INSUFICIENTE","error");
+    document.write("RECARGUE SU TARJETA POBRE DE KK...");
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+   </center>
+    
+
+
+
+
+
+
+
+</body>
+</html>
