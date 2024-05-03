@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS3</title>
+    <!-- link de sitio sweet alert mensajes más elegantes-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>TALLER METODO INDEXOF</h1>
+        <h2>BUSQUEDA ELEMENTOS ARRAYS</h2>
+        <br><br>
+        <p>Estudiante se encuentra en el indice No.</p>
+        <p id="std"></p>
+        <script>
+            let std=new Array();
+            //
+            let num=parseInt(prompt("INGRESE TOPE MAXIMO"));
+            //CICLO FOR
+            for(i=0;i<num;i++){
+                std[i]=prompt("INGRESE NOMBRE A GUARDAR");
+            }
+            //
+            let buscar=prompt("INGRESE NOMBRE A BUSCAR");
+            //INDEXOF ES PARA BUSCAR Y A LA VEZ GENERA EL INDICE DEL ELEMENTO EN EL ARRAY
+            //TRIM ES PARA ELIMINAR LOS ESPACIOS INNECESARIOS A LA IZQUI Y DERECHA
+            let find=std.indexOf(buscar.trim());
+            //Condicional
+            if(find>-1){
+                document.getElementById("std").innerHTML=find+"..."+buscar;
+                swal("Apreciado usuario","NOMBRE ENCONTRADO EN ARRAYS","success");
+            }else{
+                document.getElementById("std").innerHTML="ERROR... NOMBRE NO ENCONTRADO"+buscar;
+                swal("Apreciado usuario","ERROR... NOMBRE NO LOCALIZADO EN ARRAYS","error");
+            }
+        </script>
+    </center>
+</body>
+</html>

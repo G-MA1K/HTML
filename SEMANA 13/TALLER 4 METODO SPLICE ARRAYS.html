@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS4</title>
+        <!-- link de sitio sweet alert mensajes más elegantes-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>TALLER METODO SPLICE JS</h1>
+        <h2>BUSQUEDA Y ELIMINACION DE ELEMENTOS DE ARRAYS</h2>
+        <br><br>
+        <script>
+            let std=new Array();
+            let num=prompt("INGRESE TOPE MAXIMO");
+            //CICLO
+            for(i=0;i<num;i++){
+                std[i]=prompt("INGRESE NOMBRE A GUARDAR");
+            }
+            //
+            let borrar=prompt("INGRESE NOMBRE A BORRAR");
+            // LOCALIZAR ELEMENTO
+            let find=std.indexOf(borrar.trim());
+            //condicional
+            if(find>-1){
+                swal("Apreciado usuario","NOMBRE ELIMINADO DE ARRAYS","success")
+                var indez=std.splice(find,1);
+            }else{
+                swal("Apreciado usuario","NOMBRE NO ENCONTRADO NI ELIMINADO DE ARRAYS","error")
+            }
+            //genera por pantalla array final y actualizado
+            document.write(std+",");
+        </script>
+    </center>
+</body>
+</html>
