@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuesta Ramdon</title>
+    <!-- Enlace css -->
+    <link rel="stylesheet" href="css/SIMULADOR 2.css">
+    <!-- Enlace Js -->
+    <script src="js/SIMULADOR 2.js"></script>
+    <!-- link de sitio sweet alert mensajes más elegantes-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>APUESTAS JS</h1>
+        <h2>DE CLICK EN BOTON APOSTAR</h2>
+        <br><br>
+        <form action="">
+            <label for="">Numero apostado</label>
+            <input type="text" id="apostado" disabled>
+            <br><br>
+            <label for="">Numero generado al azar</label>
+            <input type="text" id="resultado" disabled>
+            <br><br>
+            <label for="">Resulatdo de Apuesta</label>
+            <input type="text" id="salida" disabled>
+        </form>
+        <br><br>
+        <div id="boton">
+            <button onclick="apostar();">APOSTAR !!</button>
+            <button onclick="cancel();">BORRAR</button>
+        </div>
+    </center>
+</body>
+</html>
