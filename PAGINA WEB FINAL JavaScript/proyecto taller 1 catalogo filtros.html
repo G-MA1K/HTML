@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="css/catalogo.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/catalogo.css">
+    
+    </head>
+    <body>
+    <!-- MAIN -->
+    <div class="main">
+    <h1>CULT</h1>
+    <hr>
+    <h2>PIEZAS / MERCH </h2>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+      <button class="btn" onclick="filterSelection('computador')"> Marcos</button>
+      <button class="btn" onclick="filterSelection('celular')"> Corazas </button>
+      <button class="btn" onclick="filterSelection('ropa')"> Merch</button>
+    </div>
+    <div id="toggle"><!-- CAMBIO-->
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <!-- Portfolio Gallery Grid  Computador -->
+      <div class="column computador">
+        <div class="content">
+          <img src="./img/marco 1.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Marco - Devon Smilie</h4>
+          <p>385.00</p>
+        </div>
+      </div>
+      <div class="column computador">
+        <div class="content">
+        <img src="./img/marco 2.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Marco - Dakota Roche</h4>
+          <p>$274.99</p>
+        </div>
+      </div>
+      <div class="column computador">
+        <div class="content">
+        <img src="./img/marco 3.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Marco - Anthony Panza</h4>
+          <p>$299.99</p>
+        </div>
+      </div>
+        <!-- Portfolio Gallery Grid  Celular -->
+      <div class="column celular">
+        <div class="content">
+          <img src="./img/coraza 1.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Coraza - Vans SiderYellow</h4>
+          <p>$29.99</p>
+        </div>
+      </div>
+      <div class="column celular">
+        <div class="content">
+        <img src="./img/coraza 2.jpg" style="width:250px;height:250px;">
+          <h4>Coraza - Dearht Black</h4>
+          <p>$30.99</p>
+        </div>
+      </div>
+      <div class="column celular">
+        <div class="content">
+        <img src="./img/coraza 3.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Coraza - Dearht Black</h4>
+          <p>$10.00</p>
+        </div>
+      </div>
+        <!-- Portfolio Gallery Grid  Ropa -->
+      <div class="column ropa">
+        <div class="content">
+          <img src="./img/merch 1.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Camiseta - Cult x Vans</h4>
+          <p>$27.00</p>
+        </div>
+      </div>
+      <div class="column ropa">
+        <div class="content">
+        <img src="./img/merch 2.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Saco - Cult x Vans</h4>
+          <p>$50.00</p>
+        </div>
+      </div>
+      <div class="column ropa">
+        <div class="content">
+        <img src="./img/merch 3.jpg" alt="" style="width:250px;height:250px;">
+          <h4>Gorra - SimpolCult</h4>
+          <p>$20.00</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    <!-- END MAIN -->
+    </div>
+    <script src="js/catalogo.js"></script>
+    </body>
+    </html>
+</body>
+</html>
